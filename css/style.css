@@ -43,6 +43,11 @@ img {
     display: block;
     max-width: 100%;
 }
+p  {
+    color: #757575;
+    font-size: 14px;
+    } 
+   
 .list {
     padding: 0;
     margin: 0;
@@ -289,11 +294,7 @@ img {
     color: #212121;
     }
                         /*Цвет и размер текста в абзацаx*/
-p  {
-    color: #757575;
-    font-size: 14px;
-    } 
-   
+
                         /*Цвет кнопки и текста Главной страницы*/
 .section-btn {
     padding-top: 100px;
