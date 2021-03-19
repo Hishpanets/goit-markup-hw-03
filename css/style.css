@@ -1,0 +1,446 @@
+
+html {
+    box-sizing: border-box;
+    }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+    }
+  :root {
+    --main-color: #212121;
+    --black-color: #000000;
+    --grey-color: #757575;
+    --blue-color: #2196F3;
+    --white-color: #FFFFFF;
+    }
+
+body {
+    margin: 0;
+    font-family: Roboto;
+    color: #212121;
+    }
+a {
+    text-decoration: none;
+   }
+
+ul  {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+.list {
+    padding: 0;
+    margin: 0;
+    display: none;
+    }
+.line-border{
+    border: 1px solid #ECECEC;
+    
+}
+.thumb {
+    display: flex;
+   }
+.thumb > .photo {
+    max-width: 100%;
+    margin-right: 30px;
+}   
+.thumb > .photo:first-child{
+    margin-left:0px;
+    }
+.thumb > .photo:last-child{
+    margin-right:0px;
+}
+
+            /* Контейнер*/
+.container{ 
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    } 
+
+                 /* Стилизация шапки*/
+  
+
+
+                         /* Класс для Логотипа*/
+.logo {  
+    display: flex;
+    padding-top: 24px;  
+    padding-bottom: 25px;
+    margin:0;
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    color: #000000;
+    text-decoration: none;
+    }
+                          /*Ссылки навигации*/
+.container-box {
+        display: flex;
+   
+}
+.logo-link{
+    align-items: center;
+    display: flex;
+} 
+
+.site-nav{
+    margin-left: 93px;
+    align-items: center;
+    display: flex;
+    /*margin-right: 50px;*/
+}
+.site-nav > .item + .item {
+    margin-left: 50px;
+}
+ 
+.header-link{
+    margin-left: 331px;
+    align-items: center;
+    display: flex;
+}
+.header-link > .item + .item{
+    margin-left: 50px;
+}
+.link-nav   {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #212121;
+    }
+.link-nav:hover,.link-nav:focus {
+    color:  #2196F3
+    }
+    
+                         /*Наведение на ссылки*/
+.link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color:#757575 ;
+    }
+.link:hover,.link:focus {
+    color:  #2196F3 ;
+    }
+
+                        /*цвет Web в xедере*/
+.web-part {
+    color: #2196F3;
+    }
+
+.web-sec-part {
+    color:#000;
+    } 
+   
+
+
+
+                            
+                    /*Цвет заголовка главной секции*/
+          
+.main-title {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    }
+.hero-title {
+    padding-bottom: 200px;
+    padding-top: 200px;
+    text-align: center;
+    background-color: #2F303A;
+      
+    }
+                        /*Данные о заголовке H2*/
+
+.section { 
+    margin-top: 0;
+    margin-bottom: 0;
+    
+}
+.our-adv {
+    display: flex;
+    flex-wrap: wrap;
+}
+.our-adv > .item {
+    width: calc((100% - 90px) / 4 );
+    margin-right: 30px;
+   }
+.our-adv >.item:nth-child(4n) {
+    margin-right: 0;
+    
+}
+.section-title {
+    margin: 0;
+    margin-top: 50px;
+    margin-bottom: 94px;
+    font-size: 36px;
+    line-height:1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    }
+.what-we-do {
+       margin: 0;
+       padding: 0;
+   }
+
+    
+
+
+    
+                    /*Текст о наших преимуществах*/
+.text-paragraph  {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+    } 
+                            /*Наша команда*/
+.section-title-text {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height:1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    }
+.our-team{
+        padding: 0;
+        margin: 0;
+        display: flex;
+}
+.our-team > .photo {
+    padding-bottom: 30px;
+    margin-left: 0;
+    margin-right: 30px;
+    margin-top: 0;
+    margin-bottom: 94px;
+    
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+}
+.our-team > .photo:first-child{
+    margin-left:0px;
+    }
+.our-team > .photo:last-child{
+    margin-right:0px;
+}
+.section-grey{
+    background:  #F5F4FA;
+}
+                                /*Профессии*/
+.profession {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height:1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #757575;
+    }
+                    /*Цвет и размер текста в заголовке Н3*/
+.title-text {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height:1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+    }
+                        /*Цвет и размер текста в абзацаx*/
+p  {
+    color: #757575;
+    font-size: 14px;
+    } 
+   
+                        /*Цвет кнопки и текста Главной страницы*/
+.section-btn {
+    padding-top: 100px;
+    text-align: center;
+    margin-bottom: 94px;
+}
+.button-main {
+    margin-bottom: 0;
+    padding-left: 32px;
+    padding-top: 10px;
+    padding-right: 32px;
+    padding-bottom: 10px;
+    min-width: 200px;
+    height: 50px;
+    background-color: #2196F3 ;
+    border-radius: 4px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1.87;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+.button-main:hover, .button-main:focus {
+    color: #2F303A   ;
+    }
+                         /*Цвет кнопки и текста страницы Портфолио*/
+.link .button-port {
+    padding: 6px, 22px,6px,22px;
+    margin: 0;
+    cursor: pointer;
+    background-color: #2196F3;
+    color: #000;
+    background: #F5F4FA;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    }
+.link .button-port:hover,.link.button-port:focus  {
+    background-color:  #2196F3;
+    color: #fff ;
+    }
+
+                            /*Flexbox Кнопок*/
+    
+.link  { 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+                 
+     }
+    
+.link > .link-btn  {
+    margin-top: 94px;
+    margin-bottom: 50px;
+    margin-right: 9px;
+    }
+
+.link > .link-btn:last-child  { 
+    margin-right: 0;
+
+}
+    
+
+                                    /*Заголовки галереи портфолио*/
+.titles-port {
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: #212121;
+    }
+.category-port  {
+    padding-bottom: 20px;
+    margin-top: 4px;
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: #757575;
+    }
+   
+
+                            /*Flexbox Элементы*/
+
+.content-li{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    margin-left: -30px;
+    margin-top: -30px;
+    }
+.content-li> .item {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+    
+    
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    }
+
+                                 /*Подвал*/
+.footer-design {
+    margin-top: 0;
+    padding-top: 60px;
+    height: 252px;
+    background-color: #2F303A ;
+    }
+.web-footer {
+    color:#FFFFFF;
+    }
+.link-address {
+    margin-top: 20px ;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    background-color: #2F303A;;
+    color: #FFFFFF;
+    }
+.link-address:hover, .link-address:focus  {
+    color: #2196F3;
+    }
+
+.link-footer {
+    padding-top: 9px;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    background: #2F303A;
+    color: rgba(255, 255, 255, 0.6);
+    }
+.link-footer:hover,.link-footer:focus {
+    color:  #2196F3;
+    }
+
