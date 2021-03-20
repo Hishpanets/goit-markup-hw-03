@@ -58,6 +58,7 @@ p  {
     
 }
 .thumb {
+    margin-top: 50px;
     display: flex;
    }
 .thumb > .photo {
@@ -99,7 +100,7 @@ p  {
     }
                           /*Ссылки навигации*/
 .container-box {
-        display: flex;
+    display: flex;
    
 }
 .logo-link{
@@ -121,9 +122,15 @@ p  {
     margin-left: 331px;
     align-items: center;
     display: flex;
+}.header-link > .item {
+    padding: 0;
+   
 }
+
 .header-link > .item + .item{
     margin-left: 50px;
+   
+
 }
 .link-nav   {
     display: block;
@@ -141,6 +148,7 @@ p  {
     
                          /*Наведение на ссылки*/
 .link {
+    margin: 0;
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -208,14 +216,32 @@ p  {
 }
 .section-title {
     margin: 0;
-    margin-top: 50px;
-    margin-bottom: 94px;
     font-size: 36px;
     line-height:1.16;
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
     }
+.title-section {
+    margin: 0;
+    padding: 0;
+}
+.section-title-none {
+    display: none;
+   }
+.main-sections {
+    padding-bottom: 94px;
+}
+
+.section-title-team { 
+    margin: 0;
+    padding: 0;
+    font-size: 36px;
+    line-height:1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+ } 
 .what-we-do {
        margin: 0;
        padding: 0;
@@ -246,7 +272,7 @@ p  {
     }
 .our-team{
         padding: 0;
-        margin: 0;
+        margin-top: 50px;
         display: flex;
 }
 .our-team > .photo {
@@ -254,7 +280,7 @@ p  {
     margin-left: 0;
     margin-right: 30px;
     margin-top: 0;
-    margin-bottom: 94px;
+    margin-bottom: 0;
     
     background-color: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -270,6 +296,7 @@ p  {
     margin-right:0px;
 }
 .section-grey{
+    padding: 94px 0;
     background:  #F5F4FA;
 }
                                 /*Профессии*/
@@ -297,16 +324,12 @@ p  {
 
                         /*Цвет кнопки и текста Главной страницы*/
 .section-btn {
-    padding-top: 100px;
-    text-align: center;
-    margin-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    
 }
 .button-main {
-    margin-bottom: 0;
-    padding-left: 32px;
-    padding-top: 10px;
-    padding-right: 32px;
-    padding-bottom: 10px;
+    padding: 10px 32px;   
     min-width: 200px;
     height: 50px;
     background-color: #2196F3 ;
@@ -325,45 +348,41 @@ p  {
     color: #2F303A   ;
     }
                          /*Цвет кнопки и текста страницы Портфолио*/
-.link .button-port {
-    padding: 6px, 22px,6px,22px;
-    margin: 0;
-    cursor: pointer;
-    background-color: #2196F3;
-    color: #000;
-    background: #F5F4FA;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+.links .button-port {
+    padding: 6px 22px 6px 22px;
     border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    background: #F5F4FA;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
-    text-align: center;
+    
     letter-spacing: 0.03em;
     color: #212121;
     }
-.link .button-port:hover,.link.button-port:focus  {
+.links .button-port:hover,.link.button-port:focus  {
     background-color:  #2196F3;
     color: #fff ;
     }
 
                             /*Flexbox Кнопок*/
     
-.link  { 
-    margin: 0;
+.links  { 
+    margin-bottom: 50px;
     padding: 0;
     display: flex;
     justify-content: center;
                  
      }
     
-.link > .link-btn  {
-    margin-top: 94px;
-    margin-bottom: 50px;
+.links > .link-btn  {
+    
     margin-right: 9px;
     }
 
-.link > .link-btn:last-child  { 
+.links > .link-btn:last-child  { 
     margin-right: 0;
 
 }
@@ -371,17 +390,14 @@ p  {
 
                                     /*Заголовки галереи портфолио*/
 .titles-port {
-    margin-top: 20px;
-    margin-bottom: 0;
+    padding: 20px 24px 0 24px;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: #212121;
     }
 .category-port  {
-    padding-bottom: 20px;
-    margin-top: 4px;
-    margin-bottom: 0;
+    padding: 4px 24px 20px 24px;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
@@ -403,8 +419,7 @@ p  {
     flex-basis: calc(100% / 3 - 30px);
     margin-left: 30px;
     margin-top: 30px;
-    
-    
+        
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
     }
@@ -413,14 +428,13 @@ p  {
 .footer-design {
     margin-top: 0;
     padding-top: 60px;
-    height: 252px;
+    padding-bottom: 60px;
     background-color: #2F303A ;
     }
 .web-footer {
     color:#FFFFFF;
     }
 .link-address {
-    margin-top: 20px ;
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
@@ -433,7 +447,6 @@ p  {
     }
 
 .link-footer {
-    padding-top: 9px;
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
@@ -444,4 +457,19 @@ p  {
 .link-footer:hover,.link-footer:focus {
     color:  #2196F3;
     }
+.footer-nav {
+    
+    
+}
+.footer-nav > .item + .item{
+    margin-top: 9px;
+}
+.footer-nav > .item:first-child {
+    margin-top: 0;
+}
+.footer-nav > .item:last-child {
+    margin-bottom: 0;
+
+
+
 
